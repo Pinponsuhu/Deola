@@ -41,3 +41,4 @@ Route::get('/change/password',[AdminNavigate::class , 'change_password']);
 Route::post('/change/password',[AdminNavigate::class , 'store_password']);
 Route::post('/admin/logout',[AdminNavigate::class , 'logout']);
 Route::get('/delete/testimony/{id}',[AdminNavigate::class , 'delete_reservation']);
+Route::get('/view/{ref}',[AdminNavigate::class, 'view_reference']);

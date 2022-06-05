@@ -312,10 +312,8 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
         var val6 = document.getElementById('datee').value;
         var val7 = document.getElementById('time').value;
         if(val1 != '' && val2 != '' && val3 != '' && val4 != '' && val5 != '' && val6 != '' && val7 != ''){
-        alert('shaba');
         var vall = document.getElementById('guest').value;
         newGuest = parseInt(vall) -1;
-        alert(newGuest);
         document.getElementById('set1').classList.add('hidden');
         document.getElementById('next1').classList.add('hidden');
         document.getElementById('set2').classList.remove('hidden');
@@ -328,7 +326,6 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
     }else{
         alert('Kindly fill all fields in the form')
     }
-    alert(val);
     }
     function navMenu(){
         document.getElementById('nav-menu').classList.toggle('hidden');

@@ -34,6 +34,7 @@
                             <td class="py-2.5 text-center capitalize text-gray-900 bg-gray-100">{{ $reservation->reference }}</td>
                             <td class="py-2.5 text-center capitalize text-gray-900 bg-gray-200">{{ $reservation->reservation_date }}</td>
                             <td class="py-2.5 text-center capitalize text-gray-900 bg-gray-100">{{ $reservation->reservation_time }}</td>
+                            <td class="py-2.5 text-center capitalize text-gray-900 bg-gray-100"><a class="px-6 py-3 text-red-300 bg-white" href="/view/{{ $reservation->reference }}">View</a></td>
                         </tr>
                         @endforeach
                     </tbody>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Contact;
+use App\Models\Guest;
 use App\Models\Reservations;
 use App\Models\Testimonial;
 use App\Models\User;
@@ -55,7 +56,7 @@ class AdminNavigate extends Controller
         return view('all-reservation',['reservations'=>$reservations] );
     }
 
- 
+
     public function feedbacks(){
         $feedbacks = Contact::latest()->paginate(15);
 
@@ -80,6 +81,12 @@ class AdminNavigate extends Controller
         return redirect('/admin/signin');
     }
 
+    public function view_reference($ref){
+        $info = Reservations::where('reference',$ref)->latest()->first();
+        $guest = Guest::where('reserve_id',$info->id)->get();
+
+        return view('check-admin',['info' => $info,'guests'=> $guest]);
+    }
     public function logout(){
         auth()->logout();
         return redirect('/admin/signin');
