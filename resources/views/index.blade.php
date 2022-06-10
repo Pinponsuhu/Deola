@@ -35,6 +35,7 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
         <div class="gap-x-4 items-center hidden md:flex">
             <a href="/#contact">Contact</a>
             <a href="/gallery">Gallery</a>
+            <a href="/menu">Menu</a>
         <a href="/check" class="py-3 px-7 text-white bg-rose-400 font-bold">Check reservation</a>
         </div>
         <i onclick="navMenu()" class="fa fa-bars fa-2x text-rose-400 md:hidden"></i>
@@ -43,6 +44,8 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
             <div class="flex flex-col text-white font-bold items-center gap-y-4">
                 <a href="/#contact" onclick="contact()">Contact</a>
                 <a href="/gallery">Gallery</a>
+
+            <a href="/menu">Menu</a>
         <a href="/check" class="py-3 px-7 text-rose-400 bg-white font-bold">Check reservation</a>
             </div>
         </div>

@@ -26,24 +26,26 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
 </style>
     <script src="{{ asset('js/all.js') }}"></script>
 </head>
-<body class="bg-rose-100 w-screen overflow-x-hidden">
-    <nav class="bg-white px-8 md:px-14 def flex justify-between items-center py-4">
-        <h1 class="md:text-3xl text-2xl flex items-center font-bold italic"><img src="{{ asset('icon/restaurant.png') }}" class="w-12 h-12" alt=""> Naija <span class="text-rose-500">Dinner</span></h1>
-        <div class="gap-x-4 items-center hidden md:flex">
-            <a href="/#contact">Contact</a>
+<nav class="bg-white px-8 md:px-14 def flex justify-between items-center py-4">
+    <h1 class="md:text-3xl text-2xl flex items-center font-bold italic"><img src="{{ asset('icon/restaurant.png') }}" class="w-12 h-12" alt=""> Naija <span class="text-rose-500">Dinner</span></h1>
+    <div class="gap-x-4 items-center hidden md:flex">
+        <a href="/#contact">Contact</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/menu">Menu</a>
+    <a href="/check" class="py-3 px-7 text-white bg-rose-400 font-bold">Check reservation</a>
+    </div>
+    <i onclick="navMenu()" class="fa fa-bars fa-2x text-rose-400 md:hidden"></i>
+    <div id="nav-menu" class="w-72 z-50 px-7 hidden md:hidden fixed top-0 left-0 h-screen bg-rose-400  py-8">
+        <h1 class="md:text-3xl py-3 rounded-md flex justify-center bg-white text-2xl mb-8 items-center font-bold italic"><img src="{{ asset('icon/restaurant.png') }}" class="w-12 h-12" alt=""> Naija <span class="text-rose-500">Dinner</span></h1>
+        <div class="flex flex-col text-white font-bold items-center gap-y-4">
+            <a href="/#contact" onclick="contact()">Contact</a>
             <a href="/gallery">Gallery</a>
-        <a href="/" class="py-3 px-7 text-white bg-rose-400 font-bold">Home</a>
+
+        <a href="/menu">Menu</a>
+    <a href="/check" class="py-3 px-7 text-rose-400 bg-white font-bold">Check reservation</a>
         </div>
-        <i onclick="navMenu()" class="fa fa-bars fa-2x text-rose-400 md:hidden"></i>
-        <div id="nav-menu" class="w-72 z-50 px-7 hidden md:hidden fixed top-0 left-0 h-screen bg-rose-400  py-8">
-            <h1 class="md:text-3xl py-3 rounded-md flex justify-center bg-white text-2xl mb-8 items-center font-bold italic"><img src="{{ asset('icon/restaurant.png') }}" class="w-12 h-12" alt=""> Naija <span class="text-rose-500">Dinner</span></h1>
-            <div class="flex flex-col text-white font-bold items-center gap-y-4">
-                <a href="/#contact" onclick="contact()">Contact</a>
-                <a href="/gallery">Gallery</a>
-        <a href="/" class="py-3 px-7 text-rose-400 bg-white font-bold">Home</a>
-            </div>
-        </div>
-    </nav>
+    </div>
+</nav>
 
     <main>
         <h1 class="text-center text-xl font-bold my-4">Check Reservation Details</h1>

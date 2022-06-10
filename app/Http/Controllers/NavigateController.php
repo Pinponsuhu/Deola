@@ -142,6 +142,7 @@ class NavigateController extends Controller
             'message' => 'required'
         ]);
 
+
         $contact = new Contact;
         $contact->full_name = $request->full_name;
         $contact->message = $request->message;
@@ -151,5 +152,9 @@ class NavigateController extends Controller
         return redirect('/')->with('msgg','Feedback sent Successfully');
     }
 
+
+    public function menu(){
+        return view('menu');
+    }
 
 }

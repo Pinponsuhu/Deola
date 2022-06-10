@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [NavigateController::class, 'index']);
 Route::get('/check', [NavigateController::class, 'check']);
+Route::get('/menu', [NavigateController::class, 'menu']);
 Route::get('/search',[NavigateController::class, 'checking'] );
 Route::post('/contact',[NavigateController::class, 'store_feedback'] );
 Route::get('/gallery',[NavigateController::class, 'gallery']);
