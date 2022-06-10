@@ -33,6 +33,7 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
     <nav class="bg-white px-8 md:px-14 def flex justify-between items-center py-4">
         <h1 class="md:text-3xl text-2xl flex items-center font-bold italic"><img src="{{ asset('icon/restaurant.png') }}" class="w-12 h-12" alt=""> Naija <span class="text-rose-500">Dinner</span></h1>
         <div class="gap-x-4 items-center hidden md:flex">
+            <a href="/">Home</a>
             <a href="/#contact">Contact</a>
             <a href="/gallery">Gallery</a>
             <a href="/menu">Menu</a>
@@ -42,6 +43,7 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
         <div id="nav-menu" class="w-72 z-50 px-7 hidden md:hidden fixed top-0 left-0 h-screen bg-rose-400  py-8">
             <h1 class="md:text-3xl py-3 rounded-md flex justify-center bg-white text-2xl mb-8 items-center font-bold italic"><img src="{{ asset('icon/restaurant.png') }}" class="w-12 h-12" alt=""> Naija <span class="text-rose-500">Dinner</span></h1>
             <div class="flex flex-col text-white font-bold items-center gap-y-4">
+                <a href="/">Home</a>
                 <a href="/#contact" onclick="contact()">Contact</a>
                 <a href="/gallery">Gallery</a>
 
@@ -56,6 +58,10 @@ input[type="time"]::-webkit-calendar-picker-indicator { background: none; displa
             <div class="-mt-44">
                 <h1 class="text-xl md:text-3xl font-bold text-center drop-shadow-md text-white uppercase">Naijadinner menu</h1>
             </div>
+        </section>
+        <section class="mt-6">
+            <h1 class="text-lg text-center">We use great fresh ingredients, traditional kitchen <br class="hidden md:block"> cooking methods and classic recipes all day every day.</h1>
+            <img src="{{ asset('image/menu.png') }}" class="block mx-auto" alt="">
         </section>
         <section class="md:grid grid-cols-3 gap-x-20 px-6 md:px-12 mt-12 items-start" >
             <div class="w-full my-6 mx-auto bg-white p-8">
